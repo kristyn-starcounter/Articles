@@ -1,0 +1,37 @@
+﻿.article-clickable_item {
+    border: 5px double black;
+    text-align: center;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.article-detail_item {
+    border: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-item_name {
+    text-align: inherit;
+    font-size: 20px;
+    color: slateblue;
+}
+
+.article-item_detailed_name {
+    text-align: inherit;
+    font-size: 50px;
+    color: slateblue;
+}
+
+.article-item_description {
+    text-align: inherit;
+    font-size: 15px;
+    text-wrap: normal;
+}
+
+.article-item_price {
+    text-align: inherit;
+    font-size: 12px;
+}

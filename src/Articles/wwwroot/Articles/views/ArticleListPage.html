@@ -1,0 +1,35 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<!--
+    <dom-bind><template is="dom-bind"> is a Polymer 2 auto-binding template
+    with a compatibility fallback for Polymer 1. See:
+    https://www.polymer-project.org/2.0/docs/devguide/templates
+-->
+<link rel="stylesheet" href="/Articles/css/Article.css">
+<template>
+    <dom-bind>
+        <template is="dom-bind">
+            <template is="dom-repeat" items="{{model.Articles}}">
+                <a href="/articles/detail/{{item.Key}}">                   
+                    <div style="margin-bottom:20px">
+                        <table class="article-clickable_item">
+                            <tr>
+                                <th class="article-item_name">
+                                    <fieldset>
+                                        <strong>{{item.ArtName}}</strong>
+                                    </fieldset>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="article-item_price">
+                                    <fieldset>
+                                        <strong>${{item.ArtPrice}}</strong>
+                                    </fieldset>
+                                </td>
+                            </tr>   
+                        </table>
+                    </div>
+                </a>
+            </template>
+        </template>
+    </dom-bind>
+</template>
