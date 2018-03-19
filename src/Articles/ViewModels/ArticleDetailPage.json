@@ -1,7 +1,9 @@
 {
   "Html": "/Articles/views/ArticleDetailPage.html",
-  "ArtName": "",
-  "ArtDescript": "",
-  "ArtPrice": 0
+  "Article": {
+    "$": {
+      "Reuse": "Articles.ArticleDetailsPage"
+    }
+  }
 }
 

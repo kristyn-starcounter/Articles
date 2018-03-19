@@ -8,11 +8,15 @@
 <template>
     <dom-bind>
         <template is="dom-bind">
-            <template is="dom-repeat" items="{{model.Articles}}">             
-                <div style="margin-bottom:20px" class="article-clickable_item">
-                    <starcounter-include view-model="{{item}}"></starcounter-include>
+            <a href="/articles/detail/{{model.Key}}">
+                <div slot="articles/article-summary">
+                    <h4 class="article-item_name">{{model.ArtName}}</h4>
+                    <h6 class="article-item_price">{{model.ArtPrice}}</h6>
                 </div>
-            </template>
+            </a>
         </template>
     </dom-bind>
+    <template is="declarative-shadow-dom">
+        <slot name="articles/article-summary"></slot>
+    </template>
 </template>

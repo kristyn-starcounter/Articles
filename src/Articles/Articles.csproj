@@ -62,9 +62,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\BlenderMapping.cs" />
     <Compile Include="Api\MainHandlers.cs" />
     <Compile Include="ViewModels\ArticleDetailPage.json.cs">
       <DependentUpon>ArticleDetailPage.json</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ArticleDetailsPage.json.cs">
+      <DependentUpon>ArticleDetailsPage.json</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ArticleListItemPage.json.cs">
+      <DependentUpon>ArticleListItemPage.json</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ArticleListPage.json.cs">
       <DependentUpon>ArticleListPage.json</DependentUpon>
@@ -77,6 +84,12 @@
     <TypedJSON Include="ViewModels\ArticleDetailPage.json">
       <Generator>MsBuild:Compile</Generator>
     </TypedJSON>
+    <TypedJSON Include="ViewModels\ArticleListItemPage.json">
+      <Generator>MsBuild:Compile</Generator>
+    </TypedJSON>
+    <TypedJSON Include="ViewModels\ArticleDetailsPage.json">
+      <Generator>MsBuild:Compile</Generator>
+    </TypedJSON>
     <None Include="wwwroot\Articles\views\ArticleDetailPage.html" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="wwwroot\Articles\css\Article.css" />
+    <None Include="wwwroot\Articles\views\ArticleDetailsPage.html" />
+    <None Include="wwwroot\Articles\views\ArticleListItemPage.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />

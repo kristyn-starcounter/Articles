@@ -2,10 +2,9 @@
   "Html": "/Articles/views/ArticleListPage.html",
   "Articles": [
     {
-      "Key": "",
-      "ArtName": "",
-      "ArtPrice": 0
+      "$": {
+        "Reuse": "Articles.ArticleListItemPage"
+      }
     }
   ]
-
 }

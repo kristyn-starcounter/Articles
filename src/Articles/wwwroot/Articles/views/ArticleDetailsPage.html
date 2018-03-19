@@ -1,0 +1,25 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<<template>
+    <dom-bind>
+        <template is="dom-bind">
+            <table class="article-detail_item">
+                <tr>
+                    <th class="article-item_detailed_name">
+                        <strong>{{model.ArtName}}</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="article-item_description">
+                        <strong>{{model.ArtDescript}}</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="article-item_price">
+                        <strong>${{model.ArtPrice}}</strong>
+                    </td>
+                </tr>
+            </table>
+        </template>
+    </dom-bind>
+</template>

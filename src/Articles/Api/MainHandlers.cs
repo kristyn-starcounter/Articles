@@ -6,14 +6,28 @@ namespace Articles
     {
         public static void Register()
         {
-            Handle.GET("/Articles", () =>
+            Handle.GET("/articles", () =>
             {
-                return new ArticleListPage ();
+                var p = new ArticleListPage ();
+                p.Initialize();
+                return p;
             });
 
-            Handle.GET("/Articles/detail/{?}", (string objectId) =>
+            Handle.GET("/articles/detail/{?}", (string objectId) =>
             {
-                return new ArticleDetailPage() { Data = Db.FromId<Article>(objectId) };
+                var p = new ArticleDetailPage();
+                p.Initialize(objectId);
+                return p;
+            });
+
+            Handle.GET("/articles/partials/article/detail/{?}", (string objectId) =>
+            {
+                return new ArticleDetailsPage() { Data = Db.FromId<Article>(objectId) };
+            });
+
+            Handle.GET("/articles/partials/article/summary/{?}", (string objectId) =>
+            {
+                return new ArticleListItemPage() { Data = Db.FromId<Article>(objectId) };
             });
         }
     }
