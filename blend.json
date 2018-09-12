@@ -1,0 +1,16 @@
+﻿[
+  {
+    "Uri": "/articles/partials/article/summary/{?}",
+    "FullClassName": "Articles.Article",
+    "Contexts": [
+      "small"
+    ]
+  },
+  {
+    "Uri": "/articles/partials/article/detail/{?}",
+    "FullClassName": "Articles.Article",
+    "Contexts": [
+      "detail"
+    ]
+  }
+]

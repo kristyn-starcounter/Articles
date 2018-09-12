@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\BlenderMapping.cs" />
     <Compile Include="Api\MainHandlers.cs" />
     <Compile Include="ViewModels\ArticleDetailPage.json.cs">
       <DependentUpon>ArticleDetailPage.json</DependentUpon>

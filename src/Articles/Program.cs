@@ -13,7 +13,6 @@ namespace Articles
             Application.Current.Use(new HtmlFromJsonProvider());
             Application.Current.Use(new PartialToStandaloneHtmlProvider());
             MainHandlers.Register();
-            BlenderMapping.Register();
         }
     }
 }
